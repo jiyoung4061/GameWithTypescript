@@ -22,8 +22,8 @@ error TS3553 ...
 npm install -g 했을 때는 package.json에 표기된 버전이 아니라 최신버전을 설치(오류 발생가능O)  
 npx install 의 경우는 package.json에 표기된 버전을 설치  
 ```bash
-npx install tsc -w
-npm install -g tsc -w
+npx install tsc 
+npm install -g tsc 
 ```
 
 **package.json vs package-lock.json.**  

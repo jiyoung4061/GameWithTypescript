@@ -30,4 +30,6 @@ npm install -g tsc
 package.json의 경우에는 버전이 "^3.4.7"식으로 앞에 ^가 붙어있음 -> 3.4.7 <= version < 4.0.0 으로 그 사이 버전들중 최신 버전을 install함  
 package-lock.json은 ^가 없어 정확히 3.4.7버전을 다운받음 => 꼭 github에 올려야함.
 
-### GuGuDan 구구단
+**.js와 .ts를 동시에 띄웠을 때 error**
+*tsconfig.json*
+ts파일에대한 설정

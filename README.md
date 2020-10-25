@@ -11,4 +11,23 @@ tsc gugudan.ts -w
 ``` bash
 error TS3553 ...
 ```
+**.ts vs .d.ts**  
+.ts : 실제 코드  
+.d.ts : Type에대해서만 정의되어 있음. 직접 Type을 만들어야하는 경우 .d.ts를 만들어서 로딩해 사용  
+
+<*이미 정의된 Type 읽는 방법*>
+
+**npx**  
+아래 두개가 동일하게 작동하지만 버전이 달라짐!  
+npm install -g 했을 때는 package.json에 표기된 버전이 아니라 최신버전을 설치(오류 발생가능O)  
+npx install 의 경우는 package.json에 표기된 버전을 설치  
+```bash
+npx install tsc -w
+npm install -g tsc -w
+```
+
+**package.json vs package-lock.json.**
+package.json의 경우에는 버전이 "^3.4.7"식으로 앞에 ^가 붙어있음 -> 3.4.7 <= version < 4.0.0 으로 그 사이 버전들중 최신 버전을 install함  
+package-lock.json은 ^가 없어 정확히 3.4.7버전을 다운받음 => 꼭 github에 올려야함.
+
 ### GuGuDan 구구단

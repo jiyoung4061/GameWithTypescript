@@ -1,3 +1,4 @@
+"use strict";
 // js -> ts : 먼저 타입추론으로 프로그래밍을 하되, 오류가 나는 부분의 타입을 명시적으로 선언해준다.
 var body = document.body;
 var candidate;
